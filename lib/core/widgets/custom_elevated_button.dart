@@ -6,6 +6,7 @@ class CustomElevatedButton extends StatelessWidget {
   final VoidCallback onPressed;
   final Color? backgroundColor;
   final Widget? icon;
+  final IconAlignment? iconAlignment;
   final Color textColor;
   final double borderRadius;
 
@@ -15,6 +16,7 @@ class CustomElevatedButton extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor,
     this.icon,
+    this.iconAlignment,
     this.textColor = Colors.white,
     this.borderRadius = 16,
   });
@@ -32,6 +34,7 @@ class CustomElevatedButton extends StatelessWidget {
         ),
       ),
       icon: icon,
+      iconAlignment: iconAlignment,
       label: Text(
         text,
         style: context.textTheme.bodyMedium?.copyWith(color: textColor),

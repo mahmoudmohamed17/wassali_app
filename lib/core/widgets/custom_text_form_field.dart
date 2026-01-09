@@ -3,13 +3,15 @@ import 'package:wassali_app/core/theme/typography.dart';
 import 'package:wassali_app/core/utils/extensions.dart';
 import '../theme/colors.dart';
 
-class CustomTextFormField extends StatefulWidget {
+class CustomTextFormField extends StatelessWidget {
   final String? label;
   final String? hint;
   final TextEditingController? controller;
+  final bool obscureText;
   final TextInputType? keyboardType;
   final FormFieldValidator<String>? validator;
   final Widget? prefixIcon;
+  final Widget? suffixIcon;
   final int maxLines;
   final bool enabled;
   final ValueChanged<String>? onChanged;
@@ -19,20 +21,15 @@ class CustomTextFormField extends StatefulWidget {
     this.label,
     this.hint,
     this.controller,
+    this.obscureText = false,
     this.keyboardType,
     this.validator,
     this.prefixIcon,
+    this.suffixIcon,
     this.maxLines = 1,
     this.enabled = true,
     this.onChanged,
   });
-
-  @override
-  State<CustomTextFormField> createState() => _CustomTextFormFieldState();
-}
-
-class _CustomTextFormFieldState extends State<CustomTextFormField> {
-  bool _isVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +37,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 8,
       children: [
-        if (widget.label != null) ...[
+        if (label != null) ...[
           Text(
-            widget.label!,
+            label!,
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w600,
@@ -51,23 +48,18 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           ),
         ],
         TextFormField(
-          controller: widget.controller,
-          obscureText: !_isVisible,
-          keyboardType: widget.keyboardType,
-          validator: widget.validator,
-          maxLines: widget.maxLines,
-          enabled: widget.enabled,
-          onChanged: widget.onChanged,
+          controller: controller,
+          obscureText: obscureText,
+          keyboardType: keyboardType,
+          validator: validator,
+          maxLines: maxLines,
+          enabled: enabled,
+          onChanged: onChanged,
           style: AppTypography.bodyMedium,
           decoration: InputDecoration(
-            hintText: widget.hint,
-            prefixIcon: widget.prefixIcon,
-            suffixIcon: IconButton(
-              onPressed: () => setState(() {
-                _isVisible = !_isVisible;
-              }),
-              icon: Icon(_isVisible ? Icons.visibility : Icons.visibility_off),
-            ),
+            hintText: hint,
+            prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
             border: context.theme.inputDecorationTheme.border,
             enabledBorder: context.theme.inputDecorationTheme.enabledBorder,
             disabledBorder: context.theme.inputDecorationTheme.disabledBorder,

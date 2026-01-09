@@ -8,8 +8,8 @@ class CustomOutlinedButton extends StatelessWidget {
   final Color? backgroundColor;
   final Color? borderColor;
   final Widget? icon;
+  final IconAlignment? iconAlignment;
   final Color? textColor;
-
   final double borderRadius;
   final double borderWidth;
 
@@ -20,6 +20,7 @@ class CustomOutlinedButton extends StatelessWidget {
     this.backgroundColor,
     this.borderColor,
     this.icon,
+    this.iconAlignment,
     this.textColor,
     this.borderRadius = 16,
     this.borderWidth = 1,
