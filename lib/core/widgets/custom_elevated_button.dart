@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+import 'package:wassali_app/core/utils/extensions.dart';
+
+class CustomElevatedButton extends StatelessWidget {
+  final String text;
+  final VoidCallback onPressed;
+  final Color? backgroundColor;
+  final Widget? icon;
+  final Color textColor;
+  final double borderRadius;
+
+  const CustomElevatedButton({
+    super.key,
+    required this.text,
+    required this.onPressed,
+    this.backgroundColor,
+    this.icon,
+    this.textColor = Colors.white,
+    this.borderRadius = 16,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton.icon(
+      onPressed: onPressed,
+      style: context.theme.elevatedButtonTheme.style?.copyWith(
+        backgroundColor: WidgetStatePropertyAll(backgroundColor),
+        shape: WidgetStatePropertyAll(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
+          ),
+        ),
+      ),
+      icon: icon,
+      label: Text(
+        text,
+        style: context.textTheme.bodyMedium?.copyWith(color: textColor),
+      ),
+    );
+  }
+}
