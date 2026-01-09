@@ -25,6 +25,15 @@ class AppRouter {
           );
         },
       ),
+      GoRoute(
+        path: Routes.login,
+        pageBuilder: (context, state) {
+          return CupertinoPage(
+            key: state.pageKey,
+            child: const OnboardingScreen(),
+          );
+        },
+      ),
     ],
   );
 }

@@ -11,6 +11,7 @@ class NavigationButtons extends StatelessWidget {
     required this.pageController,
     required this.currentIndex,
   });
+  
   final PageController pageController;
   final int currentIndex;
 
@@ -26,7 +27,7 @@ class NavigationButtons extends StatelessWidget {
                   onPressed: () {
                     pageController.animateToPage(
                       currentIndex - 1,
-                      duration: const Duration(milliseconds: 800),
+                      duration: const Duration(milliseconds: 600),
                       curve: Curves.ease,
                     );
                   },
@@ -47,7 +48,7 @@ class NavigationButtons extends StatelessWidget {
               } else {
                 pageController.animateToPage(
                   currentIndex + 1,
-                  duration: const Duration(milliseconds: 800),
+                  duration: const Duration(milliseconds: 600),
                   curve: Curves.ease,
                 );
               }
