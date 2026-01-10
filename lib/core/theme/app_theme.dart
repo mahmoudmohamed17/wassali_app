@@ -156,6 +156,31 @@ class AppTheme {
         subtitleTextStyle: AppTypography.bodySmall,
         leadingAndTrailingTextStyle: AppTypography.labelSmall,
       ),
+
+      // ==============================
+      // Date Picker Theme
+      // ==============================
+      datePickerTheme: const DatePickerThemeData(
+        confirmButtonStyle: ButtonStyle(
+          foregroundColor: WidgetStatePropertyAll(AppColors.textPrimary),
+        ),
+        cancelButtonStyle: ButtonStyle(
+          foregroundColor: WidgetStatePropertyAll(AppColors.textPrimary),
+        ),
+      ),
+
+      // ==============================
+      // Time Picker Theme
+      // ==============================
+      timePickerTheme: const TimePickerThemeData(
+        dayPeriodColor: AppColors.primary,
+        confirmButtonStyle: ButtonStyle(
+          foregroundColor: WidgetStatePropertyAll(AppColors.textPrimary),
+        ),
+        cancelButtonStyle: ButtonStyle(
+          foregroundColor: WidgetStatePropertyAll(AppColors.textPrimary),
+        ),
+      ),
     );
   }
 }

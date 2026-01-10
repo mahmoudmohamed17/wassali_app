@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wassali_app/core/localization/localization_keys.dart';
+import 'package:wassali_app/core/theme/colors.dart';
 import 'package:wassali_app/core/utils/app_assets.dart';
 import 'package:wassali_app/core/widgets/custom_text_button.dart';
 import 'package:wassali_app/features/onboarding/data/page_model.dart';
@@ -68,6 +69,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: CustomTextButton(
                   onPressed: () {},
                   label: LocalizationKeys.skip,
+                  labelColor: AppColors.textLight,
                 ),
               ),
               Expanded(

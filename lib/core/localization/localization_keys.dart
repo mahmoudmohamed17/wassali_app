@@ -33,11 +33,10 @@ class LocalizationKeys {
   static final passwordConfirmation = 'password_confirmation'.tr();
   static final phoneNumber = 'phone_number'.tr();
   static final mobileNumber = 'mobile_number'.tr();
-  static final enterYourEmail = 'enter_your_email'.tr();
-  static final enterYourPassword = 'enter_your_password'.tr();
   static final forgotPassword = 'forgot_password'.tr();
   static final login = 'login'.tr();
   static final createNewAccount = 'create_new_account'.tr();
+  static final enterYourEmail = 'enter_your_email'.tr();
   static final dontHaveAccount = 'dont_have_account'.tr();
   static final haveAccount = 'have_account'.tr();
   static final joinTheNetwork = 'join_the_network'.tr();
@@ -78,6 +77,7 @@ class LocalizationKeys {
   static final createNewPasswordTitle = 'create_new_password_title'.tr();
   static final createNewPasswordDesc = 'create_new_password_desc'.tr();
   static final enterNewPassword = 'enter_new_password'.tr();
+  static final enterYourPassword = 'enter_your_password'.tr();
   static final confirmPassword = 'confirm_password'.tr();
   static final retypePassword = 'retype_password'.tr();
   static final passwordRequirements = 'password_requirements'.tr();
@@ -86,14 +86,12 @@ class LocalizationKeys {
   static final passwordRequirement3 = 'password_requirement_3'.tr();
   static final passwordRequirement4 = 'password_requirement_4'.tr();
   static final confirmAndChangePassword = 'confirm_and_change_password'.tr();
-  static final weWillSendAVerificationCode = 'we_will_send_a_verification_code'
-      .tr();
+  static final weWillSendAVerificationCode = 'we_will_send_a_verification_code'.tr();
   static final sendVerificationCode = 'send_verification_code'.tr();
   static final verificationCode = 'verification_code'.tr();
   static final enterVerificationCode = 'enter_verification_code'.tr();
   static final remeberYourPassword = 'remeber_your_password'.tr();
-  static final verificationCodeHasBeenSentTo =
-      'verification_code_has_been_sent_to'.tr();
+  static final verificationCodeHasBeenSentTo = 'verification_code_has_been_sent_to'.tr();
   static final safetyInfo = 'safety_info'.tr();
   static final safetyInfo1 = 'safety_info_1'.tr();
   static final safetyInfo2 = 'safety_info_2'.tr();
@@ -113,17 +111,12 @@ class LocalizationKeys {
   static final weight = 'weight'.tr();
   static final am = 'am'.tr();
   static final pm = 'pm'.tr();
-  static final confirmDeliveryRequestTitle = 'confirm_delivery_request_title'
-      .tr();
-  static final youAreAboutToSendADeliveryRequestTo =
-      'you_are_about_to_send_a_delivery_request_to'.tr();
-  static final chatWillBeOpenedToMakeDeal = 'chat_will_be_opened_to_make_deal'
-      .tr();
+  static final confirmDeliveryRequestTitle = 'confirm_delivery_request_title'.tr();
+  static final youAreAboutToSendADeliveryRequestTo = 'you_are_about_to_send_a_delivery_request_to'.tr();
+  static final chatWillBeOpenedToMakeDeal = 'chat_will_be_opened_to_make_deal'.tr();
   static final confirmAcceptRequestTitle = 'confirm_accept_request_title'.tr();
-  static final youAreAboutToAcceptADeliveryRequestFrom =
-      'you_are_about_to_accept_a_delivery_request_from'.tr();
-  static final notificationWillBeSentToTheSender =
-      'notification_will_be_sent_to_the_sender'.tr();
+  static final youAreAboutToAcceptADeliveryRequestFrom = 'you_are_about_to_accept_a_delivery_request_from'.tr();
+  static final notificationWillBeSentToTheSender = 'notification_will_be_sent_to_the_sender'.tr();
   static final personalProfile = 'personal_profile'.tr();
   static final verified = 'verified'.tr();
   static final rate = 'rate'.tr();
@@ -139,8 +132,7 @@ class LocalizationKeys {
   static final addingRate = 'adding_rate'.tr();
   static final rateCourier = 'rate_courier'.tr();
   static final shareYourExperienceWith = 'share_your_experience_with'.tr();
-  static final shareYourExperienceWithThisCourier =
-      'share_your_experience_with_this_courier'.tr();
+  static final shareYourExperienceWithThisCourier = 'share_your_experience_with_this_courier'.tr();
   static final chooseRating = 'choose_rating'.tr();
   static final comment = 'comment'.tr();
   static final optional = 'optional'.tr();
@@ -161,8 +153,7 @@ class LocalizationKeys {
   static final newMessage = 'new_message'.tr();
   static final newRate = 'new_rate'.tr();
   static final newAvailableTrip = 'new_available_trip'.tr();
-  static final yourRequestHaveBeenAccepted = 'your_request_have_been_accepted'
-      .tr();
+  static final yourRequestHaveBeenAccepted = 'your_request_have_been_accepted'.tr();
   static final paymentReceived = 'payment_received'.tr();
   static final sumOfMoneyWasDeposited = 'sum_of_money_was_deposited'.tr();
   static final toYourWallet = 'to_your_wallet'.tr();
@@ -187,9 +178,29 @@ class LocalizationKeys {
   static final thursday = 'thursday'.tr();
   static final friday = 'friday'.tr();
   static final postNewTrip = 'post_new_trip'.tr();
-  static final routeDetailsTitle = 'route_details_title'.tr();
-  static final routeDetailsDesc = 'route_details_desc'.tr();
+  static final route = 'route'.tr();
+  static final appointment = 'appointment'.tr();
+  static final date = 'date'.tr();
+  static final time = 'time'.tr();
+  static final spaceAndPrice = 'space_and_price'.tr();
+  static final poundPerKg = 'pound_per_kg'.tr();
+  static final willBeShownThatYouHaveCar = 'will_be_shown_that_you_have_car'.tr();
+  static final notes = 'notes'.tr();
+  static final exampleWeeklyTripEtc = 'example_weekly_trip_etc'.tr();
+  static final postTheTripNow = 'post_the_trip_now'.tr();
   static final postNewDeliveryRequest = 'post_new_delivery_request'.tr();
+  static final packageDetails = 'package_details'.tr();
+  static final descriptionOfContents = 'description_of_contents'.tr();
+  static final exampleClothesGiftsUnbreakable = 'example_clothes_gifts_unbreakable'.tr();
+  static final urgentRequest = 'urgent_request'.tr();
+  static final fastDeliveryNeeded = 'fast_delivery_needed'.tr();
+  static final breakable = 'breakable'.tr();
+  static final priceOffered = 'price_offered'.tr();
+  static final amount = 'amount'.tr();
+  static final needsSpecialCare = 'needs_special_care'.tr();
+  static final postTheRequestNow = 'post_the_request_now'.tr();
+  static final cairo = 'cairo'.tr();
+  static final alexandria = 'alexandria'.tr();
   static final yes = 'yes'.tr();
   static final no = 'no'.tr();
 }
